@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700|Oxygen" rel="stylesheet">
+    <title>Trees in your zip code</title>
+  </head>
+  <body>
+    <% trees.forEach(tree => {%>
+  <h3>
+    <%= tree.spc_common %>
+  </h3>
+  <p>
+    <%= tree.tree_id %>
+  </p>
+  <p>
+    <%= tree.spc_latin %>
+  </p>
+  <p>
+    <%= tree.health %>
+  </p>
+  <p>
+    <%= tree.address %>
+  </p>
+  <p>
+    <%= tree.nta_name %>
+  </p>
+  <p>
+    <%= tree.postcode %>
+  </p>
+  <form action="/trees/favorites" method= "POST">
+    <input type= "hidden" name= "treeApiId" value= "<%= tree.tree_id %>">
+    <button class"btn">
+    Favorite This Tree
+    </button>
+  </form>
+  <%})%>
+  </body>
+</html>

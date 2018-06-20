@@ -1,0 +1,43 @@
+body {
+  background-color: #756d54;
+  color: #bed558;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+.flex-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  content: url(identreefierlogo.svg);
+  height: 400px;
+  margin-right: 50px;
+}
+
+.parent-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 125px;
+}
+
+.form-horizontal1 {
+  display: flex;
+}
+
+.button-container {
+  padding: 50px;
+}
+.parent-container h1 {
+  font-size: 75px;
+}

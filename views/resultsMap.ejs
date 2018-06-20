@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700|Oxygen" rel="stylesheet">
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        background-color: #313715;
+        color: #b88b4a;
+        font-family: "Oxygen", sans-serif;
+        height: 100%;
+      }
+      a {
+        color: inherit;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+      button {
+        background-color: #b88b4a;
+        border: #b88b4a;
+        color: white;
+      }
+      .container {
+        justify-content: center;
+      }
+
+      .row {
+        justify-content: center;
+      }
+      .button-margin {
+        margin: 20px;
+      }
+      #map {
+       height: 30em;
+       width: 50em;
+      }
+   </style>
+    <title>Results Map</title>
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <div class="row">
+        <div id="map">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <button class"btn button-margin">
+          <a href="/favorites">Favorite Trees</a>
+        </button>
+         &nbsp;
+         &nbsp;
+        <button class"btn button-margin">
+          <a href="/home">Return to Zipcode Search</a>
+        </button>
+      </div>
+    </div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjlPZrq3t1CRc1JScLhFBaLcgkZu0fUts">
+    </script>
+    <script src="/client/map.js"></script>
+  </body>
+</html>

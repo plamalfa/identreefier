@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #313715;
+  color: #b88b4a;
+  font-family: "Oxygen", sans-serif;
+  height: 100%;
+}
+
+a {
+  color: #ddca7d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #458b00;
+}
+img {
+  border-radius: 50px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.header {
+  font-family: "Bitter", serif;
+}
+
+.container {
+  justify-content: center;
+}
+
+.row {
+  justify-content: center;
+}
+
+.col-lg-12 {
+  justify-content: center;
+}
+
+/* .image {
+  content: url(identreefierlogo.svg);
+  height: 500px;
+  width: 500px;
+  border: 1px solid red;
+  justify-content: center;
+} */

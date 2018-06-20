@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #313715;
+  color: #b88b4a;
+  font-family: "Oxygen", sans-serif;
+  height: 100%;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  font-family: "Bitter", serif;
+}
+
+.container {
+  justify-content: center;
+}
+
+.row {
+  justify-content: center;
+}
+
+.image {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.button-margin {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}

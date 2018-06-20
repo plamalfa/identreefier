@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700|Oxygen" rel="stylesheet">
+    <style>
+        html {
+          height: 100%;
+        }
+
+        body {
+          background-color: #313715;
+          color: #ddca7d;
+          font-family: "Oxygen", sans-serif;
+          height: 100%;
+        }
+
+        p {
+          font-family: "Oxygen", sans-serif;
+        }
+
+        a {
+          color: inherit;
+        }
+
+        a:hover {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        .title {
+          font-family: "Bitter", serif;
+          color: #b88b4a;
+        }
+
+        .header {
+          font-family: "Bitter", serif;
+        }
+
+        .container {
+          justify-content: center;
+        }
+
+        .row {
+          justify-content: center;
+        }
+        .regular-button {
+          background-color: green;
+          color: white;
+        }
+        .btn-success {
+          background-color: white;
+          color: black;
+          border: white;
+        }
+    </style>
+<title>
+  Add Notes
+</title>
+</head>
+<body>
+  <div class="container">
+    <form class="form-horizontal" action="/favorites/<%=tree.treeid%>/edit" method="post">
+
+      <!-- Form Name -->
+      <br>
+      <h2 class="header title">Edit Tree Notes</h2>
+
+      <h3>Notes:</h3> <p><%=tree.notes%></p>
+
+      <div class="form-group">
+        <input id="notes" name="notes" type="text" value="<%=tree.notes%>" class="form-control input-md">
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="control-label" for="submit"></label>
+          <button id="submit" name="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+
+
+
+    <form method="POST" action="/favorites/<%=tree.id%>?_method=DELETE">
+      <br>
+    <button type="submit" class="btn">Delete Tree from Favorites</button>
+    </form>
+
+    <br>
+
+    <button class="btn regular-button">
+      <a href="/favorites">Return to Favorites</a>
+    </button>
+  </div>
+</body>
+</html>

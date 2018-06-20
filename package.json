@@ -1,0 +1,43 @@
+{
+  "name": "identreefier",
+  "version": "1.0.0",
+  "description": "WDI Ewoks Project 2",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "es6-promise": "^4.2.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "googlemaps": "^1.12.0",
+    "isomorphic-fetch": "^2.2.1",
+    "method-override": "^2.3.10",
+    "node-fetch": "^2.1.2",
+    "nodemon": "^1.17.5",
+    "pg-promise": "^8.4.4",
+    "session-file-store": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "npm install --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plamalfa/identreefier.git"
+  },
+  "keywords": ["heroku"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plamalfa/identreefier/issues"
+  },
+  "proxy": "http://localhost:4567",
+  "engines": {
+    "node": "9.1.0",
+    "npm": "5.6.0"
+  }
+}

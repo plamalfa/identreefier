@@ -1,0 +1,5 @@
+CREATE TABLE users (
+  id BIGSERIAL PRIMARY KEY, user_name VARCHAR (255), password VARCHAR (255)
+);
+CREATE TABLE favorites (
+  id BIGSERIAL PRIMARY KEY, userId INTEGER REFERENCES users(id), treeId VARCHAR (255));

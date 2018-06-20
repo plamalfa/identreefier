@@ -1,0 +1,37 @@
+body {
+  background-color: #313715;
+  color: #ddca7d;
+  font-family: "Oxygen", sans-serif;
+  height: 100%;
+  border: 1px red solid;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-family: "Bitter", serif;
+  color: #b88b4a;
+}
+
+.header {
+  font-family: "Bitter", serif;
+}
+
+.container {
+  justify-content: center;
+}
+
+.row {
+  justify-content: center;
+}

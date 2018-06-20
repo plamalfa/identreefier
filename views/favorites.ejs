@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700|Oxygen" rel="stylesheet">
+    <link href="favorites.css" rel="stylesheet" type="text/css" />
+    <title>My Favorite Trees</title>
+  </head>
+  <body>
+    <div class="container h-100">
+      <div class="row">
+        <h1 class="title">Your Favorite Trees</h1>
+      </div>
+      <% trees.forEach(tree => {%>
+        <h3 class="header">
+          <%= tree.spc_common %>
+        </h3>
+        <p>
+        <b>Tree ID: </b><%= tree.tree_id %>
+        </p>
+        <p>
+          <b>Latin Name: </b><%= tree.spc_latin %>
+        </p>
+        <p>
+          <b>Condition: </b><%= tree.health %>
+        </p>
+        <p>
+          <b>Address: </b><%= tree.address %>
+        </p>
+        <p>
+          <b>Neighborhood: </b><%= tree.nta_name %>
+        </p>
+        <p>
+          <b>Zipcode: </b><%= tree.zipcode %>
+        </p>
+        <button class="btn tree-button">
+          <a href="/favorites/<%=tree.tree_id%>/edit" class="button" role="button">Add/Edit Notes</a>
+        </button>
+        <button class="btn tree-button">
+          <a href="/tree-map/<%= tree.zipcode %>">Search Again in this Zipcode</a>
+        </button>
+          <br>
+          <br>
+      <%})%>
+    <button class="btn regular-button">
+      <a href="/home">Return to Zipcode Search</a>
+    </button>
+  </div>
+  </body>
+</html>

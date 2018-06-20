@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #313715;
+  color: #b88b4a;
+  font-family: "Oxygen", sans-serif;
+  height: 100%;
+}
+
+p {
+  font-family: "Oxygen", sans-serif;
+}
+
+a {
+  color: #ddca7d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #458b00;
+}
+
+.header {
+  font-family: "Bitter", serif;
+}
+
+.container {
+  justify-content: center;
+}
+
+.row {
+  justify-content: center;
+}
+
+.image {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
